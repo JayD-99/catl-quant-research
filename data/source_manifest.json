@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "sources": {
+    "market_daily": {
+      "provider": "Eastmoney via AkShare with Yahoo Finance per-symbol fallback",
+      "url": "https://quote.eastmoney.com/center/",
+      "as_of": "2025-08-29",
+      "rows": 14185,
+      "symbols": [
+        "002074",
+        "002460",
+        "002466",
+        "002594",
+        "002709",
+        "002812",
+        "002850",
+        "300014",
+        "300037",
+        "300073",
+        "300207",
+        "300450",
+        "300750",
+        "688005",
+        "688567",
+        "sh000300"
+      ],
+      "providers_by_symbol": {
+        "300750": "Yahoo Finance fallback",
+        "002594": "Eastmoney via AkShare",
+        "300014": "Eastmoney via AkShare",
+        "002074": "Eastmoney via AkShare",
+        "300207": "Eastmoney via AkShare",
+        "688567": "Eastmoney via AkShare",
+        "002466": "Eastmoney via AkShare",
+        "002460": "Eastmoney via AkShare",
+        "688005": "Eastmoney via AkShare",
+        "300073": "Eastmoney via AkShare",
+        "002812": "Eastmoney via AkShare",
+        "002709": "Eastmoney via AkShare",
+        "300037": "Eastmoney via AkShare",
+        "300450": "Eastmoney via AkShare",
+        "002850": "Eastmoney via AkShare",
+        "sh000300": "Eastmoney index via AkShare"
+      },
+      "path": "data/raw/market_daily.parquet",
+      "retrieved_at_utc": "2026-08-31T01:50:04.044655+00:00"
+    },
+    "gfex_lithium_carbonate": {
+      "provider": "Sina main-continuous GFEX lithium-carbonate series via AkShare",
+      "official_reference_url": "https://www.gfex.com.cn/en/MarketData/HistoricalData.shtml",
+      "vendor_url": "https://finance.sina.com.cn/futures/quotes/LC0.shtml",
+      "as_of": "2025-08-29",
+      "rows_continuous": 513,
+      "continuous_rule": "vendor main-continuous series; contract-level roll reconstruction is unavailable in the public baseline; regression-only outlier winsorization is recorded in build diagnostics",
+      "path": "data/raw/gfex_lithium_continuous.parquet",
+      "retrieved_at_utc": "2026-08-31T01:50:05.491670+00:00"
+    },
+    "peer_fundamentals": {
+      "provider": "Eastmoney financial analysis via AkShare",
+      "url": "https://emweb.securities.eastmoney.com/",
+      "as_of": "2025-08-29",
+      "rows": 45,
+      "failures": {},
+      "point_in_time_rule": "annual reports from 2022 onward with notice_date on or before research cutoff",
+      "path": "data/raw/peer_fundamentals_point_in_time.parquet",
+      "retrieved_at_utc": "2026-08-31T01:50:14.512883+00:00"
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "research_as_of": "2025-08-29",
+  "market_rows": 14185,
+  "weekly_model_rows": 106,
+  "weekly_model_start": "2023-07-28",
+  "weekly_model_end": "2025-08-29",
+  "lithium_raw_return_clip_1pct": -0.14109564884596554,
+  "lithium_raw_return_clip_99pct": 0.13336817084788816,
+  "customer_top5_hhi_contribution": 0.035598649999999996,
+  "customer_top5_share_pct": 37.03
+}

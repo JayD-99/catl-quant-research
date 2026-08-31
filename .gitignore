@@ -1,0 +1,16 @@
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.matplotlib/
+.DS_Store
+
+# Downloaded source files are reproducible from the manifest and are not committed.
+data/raw/
+data/external/*.csv
+data/external/*.xlsx
+data/external/filings/
+
+# Large generated panels are reproducible; small audit tables and report figures are committed.
+data/processed/*.parquet

@@ -1,0 +1,141 @@
+{
+  "return_attribution": {
+    "market_only": {
+      "model": "market_only",
+      "nobs": 106,
+      "r_squared": 0.5395025424887638,
+      "adjusted_r_squared": 0.5350746823203866,
+      "aic": -433.26708748925637,
+      "coefficients": {
+        "const": 0.002640245997214698,
+        "market_return": 1.3031985501343866
+      },
+      "hac_standard_errors": {
+        "const": 0.002882551224935237,
+        "market_return": 0.09289720777328897
+      },
+      "p_values": {
+        "const": 0.35969799640140654,
+        "market_return": 1.0449240871777085e-44
+      }
+    },
+    "market_plus_peers": {
+      "model": "market_plus_peers",
+      "nobs": 106,
+      "r_squared": 0.6162600940169458,
+      "adjusted_r_squared": 0.6088088337065953,
+      "aic": -450.5953754872422,
+      "coefficients": {
+        "const": 0.0027062594732831543,
+        "market_return": 1.0864744008531335,
+        "peer_excess_market": 0.4321001524405397
+      },
+      "hac_standard_errors": {
+        "const": 0.0028469781343014354,
+        "market_return": 0.11262605452729896,
+        "peer_excess_market": 0.1150943896630955
+      },
+      "p_values": {
+        "const": 0.3418213715445738,
+        "market_return": 5.074262806980214e-22,
+        "peer_excess_market": 0.0001738188248962692
+      }
+    },
+    "full": {
+      "model": "full",
+      "nobs": 106,
+      "r_squared": 0.6315355716110024,
+      "adjusted_r_squared": 0.6206983825407377,
+      "aic": -452.9011822788391,
+      "coefficients": {
+        "const": 0.004144401664546918,
+        "market_return": 1.0406054529535718,
+        "peer_excess_market": 0.39377543969178946,
+        "lithium_return": 0.12257993366062271
+      },
+      "hac_standard_errors": {
+        "const": 0.00249893826713777,
+        "market_return": 0.11087512557690588,
+        "peer_excess_market": 0.11561889812454795,
+        "lithium_return": 0.04397122323365737
+      },
+      "p_values": {
+        "const": 0.0972236454091325,
+        "market_return": 6.268854184015565e-21,
+        "peer_excess_market": 0.0006596924173282912,
+        "lithium_return": 0.005307862895548465
+      }
+    },
+    "oos_validation": {
+      "observations": 28,
+      "market_only_rmse": 0.030259464069104722,
+      "full_rmse": 0.02702102217121354,
+      "incremental_oos_r2_vs_market_model": 0.20259109032842393,
+      "market_only_directional_accuracy": 0.8571428571428571,
+      "full_directional_accuracy": 0.8571428571428571,
+      "naive_positive_directional_accuracy": 0.5714285714285714
+    },
+    "internship_window_attribution": {
+      "weeks": 13,
+      "catl_cumulative_log_return": 0.20634376730856577,
+      "model_intercept_contribution": 0.053877221639109935,
+      "factor_contributions": [
+        {
+          "factor": "market_return",
+          "cumulative_log_return_contribution": 0.16423342742281896
+        },
+        {
+          "factor": "peer_excess_market",
+          "cumulative_log_return_contribution": 0.03848994469463451
+        },
+        {
+          "factor": "lithium_return",
+          "cumulative_log_return_contribution": 0.03241106070373084
+        }
+      ],
+      "residual_contribution": -0.08266788715172849
+    }
+  },
+  "peer_score_validation": [
+    {
+      "report_date": "2022-12-31",
+      "evaluation_start": "2023-05-01",
+      "evaluation_end": "2023-10-31",
+      "companies": 6,
+      "rank_ic": -0.7714285714285715,
+      "p_value": 0.07239650145772594
+    },
+    {
+      "report_date": "2023-12-31",
+      "evaluation_start": "2024-05-01",
+      "evaluation_end": "2024-10-31",
+      "companies": 6,
+      "rank_ic": 0.08571428571428573,
+      "p_value": 0.8717434402332361
+    },
+    {
+      "report_date": "2024-12-31",
+      "evaluation_start": "2025-05-01",
+      "evaluation_end": "2025-08-29",
+      "companies": 6,
+      "rank_ic": -0.48571428571428577,
+      "p_value": 0.3287230320699708
+    }
+  ],
+  "commodity_model": {
+    "observations_weekly": 109,
+    "adf_statistic_log_price": -2.945994442435084,
+    "adf_p_value_log_price": 0.04025496200993204,
+    "ar1_phi": 0.9576951426271876,
+    "ar1_half_life_weeks": 16.035506372439325,
+    "ar1_oos_rmse": 0.060837660945077615,
+    "random_walk_oos_rmse": 0.06181762560085804,
+    "selected_simulation_method": "AR(1) log-price simulation",
+    "endpoint_price_shock_quantiles": {
+      "q05": -0.2781472275033686,
+      "q50": -0.03636632153621777,
+      "q95": 0.2876108925058039
+    },
+    "important_limitation": "Lithium-price shocks are mapped to total direct-material costs through explicit scenario betas, not an estimated causal coefficient."
+  }
+}

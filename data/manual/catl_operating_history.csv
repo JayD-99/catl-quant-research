@@ -1,0 +1,4 @@
+year,release_date,ev_volume_gwh,ev_revenue_rmb_mn,ev_asp_rmb_per_wh,ev_gross_margin_pct,ess_volume_gwh,ess_revenue_rmb_mn,ess_asp_rmb_per_wh,ess_gross_margin_pct,total_revenue_rmb_mn,cost_of_sales_rmb_mn,direct_materials_rmb_mn,direct_materials_share_cost_of_sales_pct,direct_material_price_1pct_pbt_impact_rmb_mn,source_document,source_pages
+2022,2023-03-14,242,236593.497,0.98,14.1,47,44980.277,0.96,14.0,328593.988,270629.780,226656.083,83.8,2267,CATL 2025 H-share Prospectus,"187,255-256"
+2023,2024-03-21,321,285252.917,0.89,18.1,69,59900.522,0.87,18.7,400917.045,323982.130,255662.877,78.9,2557,CATL 2025 H-share Prospectus,"187,255-256"
+2024,2025-03-14,381,253041.337,0.66,23.9,93,57290.460,0.62,26.8,362012.554,273518.959,202723.479,74.1,2027,CATL 2025 H-share Prospectus,"187,255-256"

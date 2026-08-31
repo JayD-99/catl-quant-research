@@ -1,0 +1,46 @@
+project:
+  title: "CATL Quantitative Equity Research: Driver Attribution, Relative Positioning, and Risk Stress Testing"
+  focal_company: "CATL"
+  focal_symbol: "300750"
+  internship_start: "2025-06-02"
+  research_as_of: "2025-08-29"
+  market_data_start: "2022-01-01"
+  lithium_data_start: "2023-07-21"
+  random_seed: 20250829
+
+market:
+  benchmark:
+    name: "CSI 300"
+    symbol: "sh000300"
+    source: "eastmoney_index"
+    yahoo_fallback: "510300.SS"
+  focal:
+    name: "CATL"
+    symbol: "300750"
+    segment: "battery_cell"
+  core_peers:
+    - {name: "BYD", symbol: "002594", segment: "battery_oem"}
+    - {name: "EVE Energy", symbol: "300014", segment: "battery_cell"}
+    - {name: "Gotion High-Tech", symbol: "002074", segment: "battery_cell"}
+    - {name: "Sunwoda", symbol: "300207", segment: "battery_cell"}
+    - {name: "Farasis Energy", symbol: "688567", segment: "battery_cell"}
+  value_chain:
+    - {name: "Tianqi Lithium", symbol: "002466", segment: "lithium_resource"}
+    - {name: "Ganfeng Lithium", symbol: "002460", segment: "lithium_resource"}
+    - {name: "Ronbay Technology", symbol: "688005", segment: "cathode"}
+    - {name: "Easpring", symbol: "300073", segment: "cathode"}
+    - {name: "Semcorp", symbol: "002812", segment: "separator"}
+    - {name: "Tinci Materials", symbol: "002709", segment: "electrolyte"}
+    - {name: "Capchem", symbol: "300037", segment: "electrolyte"}
+    - {name: "Lead Intelligent", symbol: "300450", segment: "equipment"}
+    - {name: "Kedali", symbol: "002850", segment: "structural_parts"}
+
+model:
+  weekly_rule: "W-FRI"
+  hac_lags: 4
+  rolling_window_weeks: 52
+  oos_train_weeks: 78
+  simulations: 10000
+  horizon_weeks: 52
+  pass_through_scenarios: [0.0, 0.5, 0.7, 0.9]
+  lithium_to_total_material_cost_beta: [0.25, 0.5, 0.75]
