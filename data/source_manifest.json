@@ -64,6 +64,50 @@
       "point_in_time_rule": "annual reports from 2022 onward with notice_date on or before research cutoff",
       "path": "data/raw/peer_fundamentals_point_in_time.parquet",
       "retrieved_at_utc": "2026-08-31T01:50:14.512883+00:00"
+    },
+    "systematic_membership": {
+      "provider": "Eastmoney ETF holdings via AkShare",
+      "url": "https://fundf10.eastmoney.com/ccmx_561910.html",
+      "retrieved_at_utc": "2026-09-26T00:24:27+00:00",
+      "rows": 400,
+      "dataframe_sha256": "704a1c28fcc68fbe9512a61215ee4d73c0e9d221f26269599a8e4e5b5c159a13",
+      "parameters": {
+        "fund_symbol": "561910",
+        "years": [2021, 2022, 2023, 2024, 2025],
+        "snapshots": ["Q2", "Q4"],
+        "top_n": 50,
+        "research_cutoff": "2025-08-29",
+        "availability_rule": "Q2 +60 calendar days; Q4 +90 calendar days",
+        "path": "data/raw/systematic_membership.parquet"
+      }
+    },
+    "systematic_market_daily": {
+      "provider": "Yahoo Finance primary; Tencent via AkShare fallback",
+      "url": "https://finance.yahoo.com/",
+      "retrieved_at_utc": "2026-09-26T00:27:33+00:00",
+      "rows": 147955,
+      "dataframe_sha256": "aa67591781688273a996ce93f9b77df3819afef78a070b5c3ec42be821de75c1",
+      "parameters": {
+        "start": "2017-01-01",
+        "end_inclusive": "2025-08-29",
+        "benchmark": "510300",
+        "tencent_fallback_symbols": ["300116"],
+        "excluded_symbols": ["920185"],
+        "path": "data/raw/systematic_market_daily.parquet"
+      }
+    },
+    "systematic_fundamentals_pit": {
+      "provider": "Eastmoney financial analysis via AkShare",
+      "url": "https://emweb.securities.eastmoney.com/",
+      "retrieved_at_utc": "2026-09-26T00:28:25+00:00",
+      "rows": 3838,
+      "dataframe_sha256": "c19923cec8b049a0d8b98a2f9ddd80a9adb282b144d802ddf148015e72597c1f",
+      "parameters": {
+        "research_cutoff": "2025-08-29",
+        "notice_date_required": true,
+        "excluded_symbols": ["920185"],
+        "path": "data/raw/systematic_fundamentals_pit.parquet"
+      }
     }
   }
 }

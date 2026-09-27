@@ -1,6 +1,6 @@
 PYTHON ?= .venv/bin/python
 
-.PHONY: install download filings build analyze report test all
+.PHONY: install download filings build analyze report systematic-download systematic-run systematic-all test all
 
 install:
 	$(PYTHON) -m pip install -e .[dev]
@@ -19,6 +19,14 @@ analyze:
 
 report:
 	$(PYTHON) -m catl_quant.cli report --config config/research.yaml
+
+systematic-download:
+	$(PYTHON) -m catl_quant.cli systematic-download --config config/systematic.yaml
+
+systematic-run:
+	$(PYTHON) -m catl_quant.cli systematic-run --config config/systematic.yaml
+
+systematic-all: systematic-download systematic-run test
 
 test:
 	$(PYTHON) -m pytest

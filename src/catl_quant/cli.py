@@ -7,6 +7,8 @@ from .analysis import run_analysis
 from .build import build_datasets
 from .data_sources import download_all
 from .reporting import generate_report
+from .systematic_pipeline import run_systematic_pipeline
+from .systematic_data import download_systematic_assets
 
 
 def build_parser() -> argparse.ArgumentParser:
@@ -15,11 +17,20 @@ def build_parser() -> argparse.ArgumentParser:
     for command in ["download", "build", "analyze", "report"]:
         child = subparsers.add_parser(command)
         child.add_argument("--config", default="config/research.yaml")
+    for command in ["systematic-download", "systematic-run"]:
+        systematic = subparsers.add_parser(command)
+        systematic.add_argument("--config", default="config/systematic.yaml")
     return parser
 
 
 def main() -> None:
     args = build_parser().parse_args()
+    if args.command == "systematic-download":
+        download_systematic_assets(args.config)
+        return
+    if args.command == "systematic-run":
+        run_systematic_pipeline(args.config)
+        return
     config = load_config(args.config)
     if args.command == "download":
         download_all(config)

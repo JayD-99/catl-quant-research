@@ -1,0 +1,76 @@
+symbol,company_name,industry_group,include,reason,source_note
+000009,中国宝安,battery_materials,true,Diversified issuer with material battery-anode exposure,ETF 561910 disclosed holding; analyst-curated broad principal-business group; not an official industry taxonomy
+000049,德赛电池,battery_cells_and_systems,true,Battery packs and battery-management systems,ETF 561910 disclosed holding; analyst-curated broad principal-business group; not an official industry taxonomy
+001301,尚太科技,battery_materials,true,Battery anode materials,ETF 561910 disclosed holding; analyst-curated broad principal-business group; not an official industry taxonomy
+002050,三花智控,industrial_equipment_and_components,true,Thermal-management and vehicle components,ETF 561910 disclosed holding; analyst-curated broad principal-business group; not an official industry taxonomy
+002074,国轩高科,battery_cells_and_systems,true,Power and energy-storage battery cells and systems,ETF 561910 disclosed holding; analyst-curated broad principal-business group; not an official industry taxonomy
+002126,银轮股份,industrial_equipment_and_components,true,Thermal-management and vehicle components,ETF 561910 disclosed holding; analyst-curated broad principal-business group; not an official industry taxonomy
+002240,盛新锂能,battery_materials,true,Upstream lithium resources and lithium products,ETF 561910 disclosed holding; analyst-curated broad principal-business group; not an official industry taxonomy
+002335,科华数据,power_equipment_and_energy_services,true,Power electronics UPS and energy-storage conversion systems,ETF 561910 disclosed holding; analyst-curated broad principal-business group; not an official industry taxonomy
+002340,格林美,battery_materials,true,Battery recycling and precursor materials,ETF 561910 disclosed holding; analyst-curated broad principal-business group; not an official industry taxonomy
+002407,多氟多,battery_materials,true,Fluorine-based battery and electrolyte materials,ETF 561910 disclosed holding; analyst-curated broad principal-business group; not an official industry taxonomy
+002518,科士达,power_equipment_and_energy_services,true,UPS photovoltaic and storage power electronics,ETF 561910 disclosed holding; analyst-curated broad principal-business group; not an official industry taxonomy
+002709,天赐材料,battery_materials,true,Electrolyte and battery chemical materials,ETF 561910 disclosed holding; analyst-curated broad principal-business group; not an official industry taxonomy
+002759,天际股份,battery_materials,true,Electrolyte-related battery chemicals,ETF 561910 disclosed holding; analyst-curated broad principal-business group; not an official industry taxonomy
+002812,恩捷股份,battery_materials,true,Battery separator materials,ETF 561910 disclosed holding; analyst-curated broad principal-business group; not an official industry taxonomy
+002850,科达利,industrial_equipment_and_components,true,Precision structural components for batteries,ETF 561910 disclosed holding; analyst-curated broad principal-business group; not an official industry taxonomy
+300001,特锐德,power_equipment_and_energy_services,true,Grid equipment and EV charging services,ETF 561910 disclosed holding; analyst-curated broad principal-business group; not an official industry taxonomy
+300014,亿纬锂能,battery_cells_and_systems,true,Power consumer and energy-storage battery cells,ETF 561910 disclosed holding; analyst-curated broad principal-business group; not an official industry taxonomy
+300035,中科电气,battery_materials,true,Battery anode materials,ETF 561910 disclosed holding; analyst-curated broad principal-business group; not an official industry taxonomy
+300037,新宙邦,battery_materials,true,Electrolyte and electronic chemical materials,ETF 561910 disclosed holding; analyst-curated broad principal-business group; not an official industry taxonomy
+300068,南都电源,battery_cells_and_systems,true,Energy-storage and industrial battery systems,ETF 561910 disclosed holding; analyst-curated broad principal-business group; not an official industry taxonomy
+300073,当升科技,battery_materials,true,Cathode materials,ETF 561910 disclosed holding; analyst-curated broad principal-business group; not an official industry taxonomy
+300116,*ST保力,battery_cells_and_systems,true,Historical battery issuer; delisted after the sample period and retained to control survivorship bias,ETF 561910 historical disclosed holding; retain through last tradable observations and apply explicit delisting treatment
+300207,欣旺达,battery_cells_and_systems,true,Battery cells packs and integrated systems,ETF 561910 disclosed holding; analyst-curated broad principal-business group; not an official industry taxonomy
+300274,阳光电源,power_equipment_and_energy_services,true,Photovoltaic and energy-storage power conversion systems,ETF 561910 disclosed holding; analyst-curated broad principal-business group; not an official industry taxonomy
+300376,ST易事特,power_equipment_and_energy_services,true,Power electronics and energy systems; historical ST status retained,ETF 561910 disclosed holding; analyst-curated broad principal-business group; not an official industry taxonomy
+300390,天华新能,battery_materials,true,Upstream lithium products and battery materials,ETF 561910 disclosed holding; analyst-curated broad principal-business group; not an official industry taxonomy
+300409,道氏技术,battery_materials,true,Cathode precursor and related battery materials,ETF 561910 disclosed holding; analyst-curated broad principal-business group; not an official industry taxonomy
+300432,富临精工,battery_materials,true,Lithium iron phosphate exposure is used for broad grouping despite diversified components operations,ETF 561910 disclosed holding; analyst-curated broad principal-business group; not an official industry taxonomy
+300438,鹏辉能源,battery_cells_and_systems,true,Consumer power and energy-storage batteries,ETF 561910 disclosed holding; analyst-curated broad principal-business group; not an official industry taxonomy
+300450,先导智能,industrial_equipment_and_components,true,Battery manufacturing equipment,ETF 561910 disclosed holding; analyst-curated broad principal-business group; not an official industry taxonomy
+300457,赢合科技,industrial_equipment_and_components,true,Battery manufacturing equipment,ETF 561910 disclosed holding; analyst-curated broad principal-business group; not an official industry taxonomy
+300568,星源材质,battery_materials,true,Battery separator materials,ETF 561910 disclosed holding; analyst-curated broad principal-business group; not an official industry taxonomy
+300712,永福股份,power_equipment_and_energy_services,true,Power engineering and new-energy services,ETF 561910 disclosed holding; analyst-curated broad principal-business group; not an official industry taxonomy
+300750,宁德时代,battery_cells_and_systems,true,Power and energy-storage battery cells and systems,ETF 561910 disclosed holding; analyst-curated broad principal-business group; not an official industry taxonomy
+300763,锦浪科技,power_equipment_and_energy_services,true,Photovoltaic inverters and power conversion systems,ETF 561910 disclosed holding; analyst-curated broad principal-business group; not an official industry taxonomy
+300769,德方纳米,battery_materials,true,Lithium iron phosphate cathode materials,ETF 561910 disclosed holding; analyst-curated broad principal-business group; not an official industry taxonomy
+300827,上能电气,power_equipment_and_energy_services,true,Photovoltaic and storage power conversion systems,ETF 561910 disclosed holding; analyst-curated broad principal-business group; not an official industry taxonomy
+300919,中伟股份,battery_materials,true,Cathode precursor and related materials,ETF 561910 disclosed holding; analyst-curated broad principal-business group; not an official industry taxonomy
+300953,震裕科技,industrial_equipment_and_components,true,Precision battery structural and motor components,ETF 561910 disclosed holding; analyst-curated broad principal-business group; not an official industry taxonomy
+301238,瑞泰新材,battery_materials,true,Electrolyte and battery chemical materials,ETF 561910 disclosed holding; analyst-curated broad principal-business group; not an official industry taxonomy
+301358,湖南裕能,battery_materials,true,Lithium iron phosphate cathode materials,ETF 561910 disclosed holding; analyst-curated broad principal-business group; not an official industry taxonomy
+301487,盟固利,battery_materials,true,Cathode materials,ETF 561910 disclosed holding; analyst-curated broad principal-business group; not an official industry taxonomy
+600110,诺德股份,battery_materials,true,Battery copper foil,ETF 561910 disclosed holding; analyst-curated broad principal-business group; not an official industry taxonomy
+600478,科力远,battery_cells_and_systems,true,Battery and integrated energy-system exposure,ETF 561910 disclosed holding; analyst-curated broad principal-business group; not an official industry taxonomy
+600549,厦门钨业,battery_materials,true,Cathode and related new-energy materials exposure,ETF 561910 disclosed holding; analyst-curated broad principal-business group; not an official industry taxonomy
+600699,均胜电子,industrial_equipment_and_components,true,Automotive electronics and vehicle components,ETF 561910 disclosed holding; analyst-curated broad principal-business group; not an official industry taxonomy
+600884,杉杉股份,battery_materials,true,Battery anode and related materials exposure,ETF 561910 disclosed holding; analyst-curated broad principal-business group; not an official industry taxonomy
+600995,南网储能,power_equipment_and_energy_services,true,Grid-scale storage and power services,ETF 561910 disclosed holding; analyst-curated broad principal-business group; not an official industry taxonomy
+601311,骆驼股份,battery_cells_and_systems,true,Automotive batteries and recycling systems,ETF 561910 disclosed holding; analyst-curated broad principal-business group; not an official industry taxonomy
+603026,石大胜华,battery_materials,true,Electrolyte solvents and battery chemical materials,ETF 561910 disclosed holding; analyst-curated broad principal-business group; not an official industry taxonomy
+603063,禾望电气,power_equipment_and_energy_services,true,Power conversion and electrical drive equipment,ETF 561910 disclosed holding; analyst-curated broad principal-business group; not an official industry taxonomy
+603659,璞泰来,battery_materials,true,Anode separator-coating and related battery materials,ETF 561910 disclosed holding; analyst-curated broad principal-business group; not an official industry taxonomy
+603906,龙蟠科技,battery_materials,true,Lithium iron phosphate and related materials,ETF 561910 disclosed holding; analyst-curated broad principal-business group; not an official industry taxonomy
+605117,德业股份,power_equipment_and_energy_services,true,Photovoltaic and energy-storage inverters,ETF 561910 disclosed holding; analyst-curated broad principal-business group; not an official industry taxonomy
+688005,容百科技,battery_materials,true,Cathode materials,ETF 561910 disclosed holding; analyst-curated broad principal-business group; not an official industry taxonomy
+688006,杭可科技,industrial_equipment_and_components,true,Battery formation and testing equipment,ETF 561910 disclosed holding; analyst-curated broad principal-business group; not an official industry taxonomy
+688032,禾迈股份,power_equipment_and_energy_services,true,Photovoltaic microinverters and power electronics,ETF 561910 disclosed holding; analyst-curated broad principal-business group; not an official industry taxonomy
+688063,派能科技,battery_cells_and_systems,true,Residential and stationary energy-storage battery systems,ETF 561910 disclosed holding; analyst-curated broad principal-business group; not an official industry taxonomy
+688116,天奈科技,battery_materials,true,Conductive additives for battery materials,ETF 561910 disclosed holding; analyst-curated broad principal-business group; not an official industry taxonomy
+688155,先惠技术,industrial_equipment_and_components,true,Intelligent battery and vehicle manufacturing equipment,ETF 561910 disclosed holding; analyst-curated broad principal-business group; not an official industry taxonomy
+688248,南网科技,power_equipment_and_energy_services,true,Grid technology and energy services,ETF 561910 disclosed holding; analyst-curated broad principal-business group; not an official industry taxonomy
+688275,万润新能,battery_materials,true,Lithium iron phosphate cathode materials,ETF 561910 disclosed holding; analyst-curated broad principal-business group; not an official industry taxonomy
+688339,亿华通,battery_cells_and_systems,true,Fuel-cell power systems grouped with electrochemical energy systems,ETF 561910 disclosed holding; analyst-curated broad principal-business group; not an official industry taxonomy
+688348,昱能科技,power_equipment_and_energy_services,true,Photovoltaic microinverters and power electronics,ETF 561910 disclosed holding; analyst-curated broad principal-business group; not an official industry taxonomy
+688388,嘉元科技,battery_materials,true,Battery copper foil,ETF 561910 disclosed holding; analyst-curated broad principal-business group; not an official industry taxonomy
+688390,固德威,power_equipment_and_energy_services,true,Photovoltaic and energy-storage inverters,ETF 561910 disclosed holding; analyst-curated broad principal-business group; not an official industry taxonomy
+688472,阿特斯,power_equipment_and_energy_services,true,Solar modules and integrated energy solutions grouped with power-energy systems,ETF 561910 disclosed holding; analyst-curated broad principal-business group; not an official industry taxonomy
+688499,利元亨,industrial_equipment_and_components,true,Battery manufacturing equipment,ETF 561910 disclosed holding; analyst-curated broad principal-business group; not an official industry taxonomy
+688567,孚能科技,battery_cells_and_systems,true,Power battery cells and systems,ETF 561910 disclosed holding; analyst-curated broad principal-business group; not an official industry taxonomy
+688707,振华新材,battery_materials,true,Cathode materials,ETF 561910 disclosed holding; analyst-curated broad principal-business group; not an official industry taxonomy
+688772,珠海冠宇,battery_cells_and_systems,true,Consumer and power battery cells,ETF 561910 disclosed holding; analyst-curated broad principal-business group; not an official industry taxonomy
+688778,厦钨新能,battery_materials,true,Cathode materials,ETF 561910 disclosed holding; analyst-curated broad principal-business group; not an official industry taxonomy
+688779,五矿新能,battery_materials,true,Cathode materials,ETF 561910 disclosed holding; analyst-curated broad principal-business group; not an official industry taxonomy
+688819,天能股份,battery_cells_and_systems,true,Lead and lithium battery systems,ETF 561910 disclosed holding; analyst-curated broad principal-business group; not an official industry taxonomy
+920185,贝特瑞,battery_materials,false,BSE listing excluded because BSE microstructure and public price-source coverage are not comparable with the Shanghai-Shenzhen baseline,ETF 561910 disclosed holding retained in the mapping for audit; exclusion is a pre-model data-comparability rule

@@ -1,13 +1,14 @@
 # CATL Quantitative Equity Research
 
+**Status:** legacy single-name economic-context module within a later independent public-data reconstruction. It is not UBS work product and is not the repository's systematic alpha strategy.
 **Research cutoff:** 2025-08-29  
-**Role of CATL:** mentor-assigned focal company; the models explain and test CATL rather than claim it was discovered by a screen.
+**Role of CATL:** historical research anchor; the models explain and test CATL rather than claim it was discovered by a screen.
 
 ## Executive conclusion
 
 **Investment stance at the cutoff: operating-quality positive, equity view valuation-dependent.** CATL's 2024 revenue pressure was primarily an ASP problem, not a volume problem: battery volumes rose while reported EV and ESS ASPs fell sharply. Direct-material costs fell and segment margins improved. The July 2025 interim report then showed total revenue returning to growth, led by EV batteries, but with a modest year-on-year decline in EV segment margin. The evidence supports operating resilience; without clean point-in-time valuation and consensus-revision data, it does not support an unconditional Buy or target price.
 
-The full weekly return-attribution model explains **62.1%** of in-sample variation. Its lithium coefficient is **0.123** with a HAC p-value of **0.005**. The out-of-sample full-model RMSE is **0.0270**, versus **0.0303** for market-only, equivalent to **20.3%** incremental OOS R-squared. This is evidence that lithium adds conditional equity-return information; it is not evidence that higher lithium prices improve CATL's earnings.
+The full weekly return-attribution model explains **62.1%** of in-sample variation. Its lithium coefficient is **0.123** with a HAC p-value of **0.005**. In the rolling held-out comparison, the full-model RMSE is **0.0270**, versus **0.0303** for market-only, equivalent to **20.3%** lower squared error. Each held-out week is excluded from coefficient estimation, but its realized contemporaneous factor returns are used as explanatory inputs; this tests attribution stability rather than ex-ante tradable forecasting. The result is evidence that lithium adds conditional equity-return information, not evidence that higher lithium prices improve CATL's earnings.
 
 Within the six-company battery-manufacturer comparison set, CATL's 2024 operating score ranks **1/6**. But the three forward Rank IC observations range from **-0.771** to **0.086** and are not robust. The score identifies relative operating quality, not a validated return factor. It deliberately excludes valuation because a clean point-in-time valuation history was unavailable in the public baseline.
 
@@ -35,7 +36,7 @@ CATL's H-share prospectus reports RMB202.7bn of 2024 direct-material costs, equa
 
 The top-five customers represented 37.03% of revenue. Their disclosed shares contribute 0.0356 to HHI. This is explicitly a **top-five HHI contribution**, not full-company HHI.
 
-## 3. 2025H1 in-internship checkpoint
+## 3. 2025H1 information-cutoff checkpoint
 
 CATL reported 2025H1 revenue of RMB178.9bn, up 7.27% year on year. EV-battery revenue rose 16.80% to RMB131.6bn, while its gross margin fell 1.07ppt to 22.41%. ESS revenue fell 1.47% to RMB28.4bn, while its margin improved 1.11ppt to 25.52%.
 
@@ -49,7 +50,7 @@ This checkpoint supports a differentiated view: EV demand/revenue momentum impro
 
 The regression uses Newey-West/HAC standard errors. The equal-weighted peer factor excludes CATL. Lithium weekly returns are winsorized only at their 1st and 99th percentiles for the regression, while raw observations remain stored.
 
-During the 13-week internship window, CATL's cumulative log return was **20.6%**. The fitted contributions were market **16.4%**, peer excess **3.8%**, lithium **3.2%**, and intercept **5.4%**; the remaining company-specific residual was **-8.3%**. The summer gain was therefore associated mainly with common market/sector/commodity states, while the residual was negative.
+During the configured 13-week summer analysis window, CATL's cumulative log return was **20.6%**. The fitted contributions were market **16.4%**, peer excess **3.8%**, lithium **3.2%**, and intercept **5.4%**; the remaining company-specific residual was **-8.3%**. The summer gain was therefore associated mainly with common market/sector/commodity states, while the residual was negative.
 
 Directional accuracy is reported only as a secondary diagnostic: full model **85.7%**, market-only **85.7%**, naive always-positive **57.1%**. RMSE and incremental OOS R-squared are the primary tests.
 
@@ -80,14 +81,14 @@ The heatmap is conditional. The mapping from a lithium-price shock to total dire
 - **Equity discipline:** require contemporaneous valuation and earnings-revision data before converting operating strength into a rating or target price.
 - **Model discipline:** use market/peer/lithium exposures for attribution and monitoring, not as causal earnings coefficients.
 
-## 8. What can be defended in an interview
+## 8. Defensible interpretation of this legacy module
 
-- CATL was assigned by the mentor as the focal company.
-- The first quantitative finding was pricing pressure despite volume growth.
+- The filing-based operating result is pricing pressure despite volume growth.
 - The return model separates broad-market, peer-sector, commodity, and residual components.
 - The earnings model translates material-cost shocks into conditional PBT impacts using a filing-derived sensitivity anchor.
 - The stochastic model is selected by diagnostics; an OU/AR(1) process is not forced when stationarity and out-of-sample tests do not support it.
 - The score backtest is validation of a research ranking, not a claim of a profitable trading strategy.
+- These statements describe the later public reconstruction. Attribution to a 2025 internship requires separate contemporaneous evidence.
 
 ## 9. Data limitations and next upgrade
 

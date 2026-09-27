@@ -1,0 +1,85 @@
+project:
+  title: "A-Share Battery-Value-Chain Systematic Equity Research"
+  research_type: "cross-sectional systematic equity research prototype"
+  research_as_of: "2025-08-29"
+  market_data_start: "2017-01-01"
+  random_seed: 20250829
+  public_reconstruction_created: "2026-09-25"
+
+universe:
+  # The public baseline uses disclosed holdings of an ETF tracking the CSI New
+  # Energy Power Battery Theme Index as a conservative membership proxy.
+  index_code: "931555"
+  etf_symbol: "561910"
+  holdings_years: [2021, 2022, 2023, 2024, 2025]
+  snapshots: ["Q2", "Q4"]
+  constituents_per_snapshot: 50
+  q2_publication_delay_days: 60
+  q4_publication_delay_days: 90
+  min_price_history_days: 252
+  min_cross_section: 25
+  min_adv20_rmb: 50000000
+  benchmark_symbol: "510300"
+  benchmark_yahoo: "510300.SS"
+
+features:
+  momentum_12_1_long_days: 252
+  momentum_12_1_skip_days: 21
+  momentum_6_1_long_days: 126
+  volatility_days: 63
+  beta_days: 126
+  liquidity_days: 20
+  mad_clip: 5.0
+  min_family_coverage: 0.60
+  min_composite_families: 3
+  family_weights:
+    price_momentum: 0.25
+    operating_quality: 0.25
+    fundamental_momentum: 0.25
+    low_risk: 0.25
+
+evaluation:
+  forward_horizon_months: 1
+  quantiles: 5
+  hac_lags: 3
+  design_end: "2023-06-30"
+  validation_end: "2024-06-30"
+  final_holdout_end: "2025-08-29"
+  # The final holdout is short. Results must be labelled preliminary rather
+  # than production evidence of persistent alpha.
+
+portfolio:
+  construction: "benchmark-relative exponential score tilt"
+  score_tilt: 0.35
+  max_weight: 0.12
+  max_active_weight: 0.03
+  max_active_beta: 0.10
+  annualized_tracking_error_cap: 0.10
+  covariance_lookback_days: 126
+  covariance_diagonal_shrinkage: 0.35
+  monthly_one_way_turnover_cap: 0.25
+  min_holdings: 20
+  aum_rmb: 100000000
+  max_adv_participation: 0.05
+
+transaction_costs:
+  commission_bps_each_side: 3.0
+  spread_bps_each_side: 5.0
+  stamp_duty_sell_bps_before_2023_08_28: 10.0
+  stamp_duty_sell_bps_from_2023_08_28: 5.0
+  market_impact_eta: 0.25
+  cost_sensitivity_multipliers: [0.5, 1.0, 2.0]
+
+robustness:
+  additional_signal_lag_trading_days: 2
+  # This rerun moves every feature cutoff back by one more trading day while
+  # leaving the month-end execution and forward-return window unchanged.
+  require_leave_one_name_out_diagnostic: true
+
+disclosures:
+  - "This is an independent post-internship public-data reconstruction, not UBS work product."
+  - "ETF holdings are a delayed public proxy for historical index membership, not an official immutable constituent database."
+  - "Public vendor financial histories can contain later restatements despite notice-date filtering."
+  - "Long-short portfolios are signal diagnostics only because historical borrow availability and fees are unavailable."
+  - "The long-only backtest is a research simulation, not evidence of live trading or production deployment."
+  - "The 2026 public reconstruction received material AI coding and documentation assistance; repository ownership is not a claim of unaided line-by-line authorship."
